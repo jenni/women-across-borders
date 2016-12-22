@@ -1,0 +1,152 @@
+* { box-sizing: border-box; }
+
+* {
+  border-radius: 0 !important;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: white;
+  position: relative;
+  overflow-x: hidden;
+  color: black;
+}
+/* #566471 */
+
+h1 {
+  font-family: 'Arial';
+  font-size: 13vh;
+  color: #F5F5F5;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 5vh;
+  font-weight:lighter;
+  color: #FF69B4;
+  padding: 7vh;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 3vh;
+  padding: 1vh;
+  padding-bottom: 3vh;
+  background: url('../tbc.jpg') repeat-x scroll left bottom;
+}
+
+img {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+/* NAVBAR */
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar a {
+  -webkit-transition: color 600ms;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+}
+
+.navbar-default {
+  font-family: 'Arial';
+  background-color: white;
+  border-color: none;
+}
+
+.navbar.center .navbar-inner {
+  text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+  float: none;
+  display:inline-block;
+}
+
+
+/* LANDING STUFF*/
+
+#landing {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  position: relative;
+  float: left;
+  clear: both;
+}
+
+#actualVideo {
+  width: 180%;
+  margin-left: -40%;
+  position: absolute;
+}
+
+#videoLayerOne {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  top: 0;
+}
+
+#videoLayerTwo {
+  width: 100vw;
+  height: calc(100vh - 3vw);
+  position: absolute;
+  z-index: 2;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+
+.boxWrapper {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.projectWrapper {
+  height: 50vh;
+  position: relative;
+  clear: both;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  color: black;
+}
+
+.top {
+  margin-top: 10vh;
+}
+
+.hidme {
+  opacity: 0;
+}
+.visible {
+  opacity: 1;
+}
+
+/* a:visited {
+color: white;
+text-decoration: none;
+}
+
+a:link {
+color: white;
+text-decoration: none;
+} */
