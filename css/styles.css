@@ -5,7 +5,11 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-family: "Arial", 'Open Sans', sans-serif;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: justify;
   background: white;
   position: relative;
   overflow-x: hidden;
@@ -15,30 +19,26 @@ body {
 
 h1 {
   font-family: 'Arial';
-  font-size: 13vh;
+  font-size: 15vh;
   color: #F5F5F5;
   font-weight: bold;
+  letter-spacing: -1vh;
 }
 
 h2 {
   font-size: 5vh;
-  font-weight:lighter;
-  color: #FF69B4;
+  font-weight: lighter;
+  color: black;
   padding: 7vh;
-  text-align: center;
   text-transform: uppercase;
 }
 
 h3 {
-  font-size: 3vh;
-  padding: 1vh;
-  padding-bottom: 3vh;
-  background: url('../tbc.jpg') repeat-x scroll left bottom;
-}
-
-img {
-  width: 150px;
-  margin-bottom: 30px;
+  font-size: 2.5vh;
+  font-weight: bold;
+  padding-bottom: -2vh;
+  margin-bottom: 0vh;
+  /*  background: url('../tbc.jpg') repeat-x scroll left bottom; */
 }
 
 /* NAVBAR */
@@ -74,7 +74,6 @@ img {
 
 
 /* LANDING STUFF*/
-
 #landing {
   width: 100vw;
   height: 100vh;
@@ -112,13 +111,8 @@ img {
   align-items: center;
 }
 
-
-.boxWrapper {
-  margin-left: 10%;
-  margin-right: 10%;
-}
 .projectWrapper {
-  height: 50vh;
+  height: 100vh;
   position: relative;
   clear: both;
   display: -webkit-flex;
@@ -130,20 +124,57 @@ img {
   color: black;
 }
 
-.top {
-  margin-top: 10vh;
+/* TO ANIMATE */
+.hidme {opacity: 0;}
+.visible {opacity: 1;}
+
+
+/* WHAT SECTION */
+#what {
+  font-size: 1.8vh;
+  height: 100vh;
+  text-align: left;
 }
 
-.hidme {
-  opacity: 0;
-}
-.visible {
-  opacity: 1;
+#what h2 {
+  margin-top: 20vh;
+  text-transform: lowercase;
+  font-size: 2vh;
+  margin-left: -7vh;
+  font-weight: 900;
 }
 
-/* a:visited {
-color: white;
-text-decoration: none;
+#what h3 {background-color: #FED833;}
+
+.withPad {margin-right: 10vh}
+.icons {margin-top: 10vh;}
+.icon {width: 100px;}
+
+
+/* WHO SECTION */
+#who {height: 100vh;}
+#who p {margin-top: 30vh;}
+
+#who h2 {
+  font-size: 180px;
+  font-weight: 900;
+  margin-top: -3vh;
+}
+
+#who2 {height: 100vh;
+margin-left: 20vh;
+margin-right: 20vh;
+margin-top: 20vh;}
+
+#who2 p {
+  color: black;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center; }
+
+  /* a:visited {
+  color: white;
+  text-decoration: none;
 }
 
 a:link {
