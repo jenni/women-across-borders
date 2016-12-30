@@ -84,9 +84,9 @@ h3 {
 }
 
 #actualVideo {
-  width: 180%;
-  margin-left: -40%;
-  position: absolute;
+  /*width: 180%;*/
+  /*margin-left: -40%;*/
+  /*position: absolute;*/
 }
 
 #videoLayerOne {
