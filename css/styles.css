@@ -43,6 +43,26 @@ h3 {
 
 /* NAVBAR */
 
+.who-are-we-image {
+  width: 98%;
+  margin: 1%;
+}
+
+@media (min-width: 600px) {
+  .who-are-we-image-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    margin-top: 10%;
+  }
+}
+
+.who2-content {
+  line-height: 1;
+  text-shadow: .5px .5px white;
+}
+
 .navbar {
   position: fixed;
   width: 100%;
@@ -76,40 +96,63 @@ h3 {
 /* LANDING STUFF*/
 #landing {
   width: 100vw;
-  height: 100vh;
-  background: black;
   position: relative;
-  float: left;
   clear: both;
-}
-
-#actualVideo {
-  /*width: 180%;*/
-  /*margin-left: -40%;*/
-  /*position: absolute;*/
 }
 
 #videoLayerOne {
   width: 100vw;
-  height: 100vh;
-  position: absolute;
-  z-index: 1;
-  overflow: hidden;
-  top: 0;
-}
-
-#videoLayerTwo {
-  width: 100vw;
-  height: calc(100vh - 3vw);
-  position: absolute;
-  z-index: 2;
-  display: -webkit-flex;
+  position: relative;
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
   align-items: center;
 }
+
+.header {
+  position: absolute;
+  z-index: 2;
+}
+
+/*refactor this make it cleaner look into what sets the size*/
+
+@media (min-width: 300px) {
+  .header {
+    font-size: 42px;
+  }
+
+@media (min-width: 550px) {
+  .header {
+    font-size: 52px;
+  }
+}
+
+@media (min-width: 700px) {
+  .header {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 850px) {
+  .header {
+    font-size: 78px;
+  }
+}
+
+@media (min-width: 950px) {
+  .header {
+    font-size: 85px;
+  }
+}
+  /*refactor this make it cleaner*/
+
+@media (min-width: 1050px) {
+  .header {
+    font-size: 95px;
+  }
+}
+
 
 .projectWrapper {
   height: 100vh;
