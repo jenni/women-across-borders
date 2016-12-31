@@ -191,7 +191,7 @@ h3 {
 
 .who2-content {
   line-height: 1;
-  text-shadow: .5px .5px white;
+  text-shadow: .5px .5px grey;
 }
 
 .img2 {
@@ -208,6 +208,12 @@ h3 {
 /* a:visited {
 color: white;
 text-decoration: none;
+    background: transparent;
+}
+
+  /* a:visited {
+  color: white;
+  text-decoration: none;
 }
 
 a:link {
