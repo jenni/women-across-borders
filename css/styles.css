@@ -169,15 +169,16 @@ h3 {
   }
 }
 
-#who2 {height: 100vh;
+#who2 {
+  height: 100vh;
   margin-left: 20vh;
   margin-right: 20vh;
   margin-top: 20vh;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   #who2 {
-    margin-top: 30vh;
+    margin-top: 75vh;
     margin-left: 5vh;
     margin-right: 5vh;
   }
@@ -190,8 +191,8 @@ h3 {
   text-align: center; }
 
 .who-are-we-image {
-  width: 98%;
-  margin: 1%;
+  margin-top: 25%;
+  width: 100%;
 }
 
 .who2-content {
