@@ -163,10 +163,25 @@ h3 {
   line-height: 25vh;
 }
 
+@media (max-width: 1000px) {
+  #who h2 {
+    margin-top: 45vh;
+  }
+}
+
 #who2 {height: 100vh;
   margin-left: 20vh;
   margin-right: 20vh;
-  margin-top: 20vh;}
+  margin-top: 20vh;
+}
+
+@media (max-width: 600px) {
+  #who2 {
+    margin-top: 30vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+}
 
 #who2 p {
   color: black;
@@ -179,6 +194,11 @@ h3 {
   margin: 1%;
 }
 
+.who2-content {
+  line-height: 1;
+  text-shadow: .5px .5px grey;
+}
+
 @media (min-width: 600px) {
   .who-are-we-image-container {
     display: flex;
@@ -187,18 +207,12 @@ h3 {
     height: 100%;
     margin-top: 10%;
   }
-
 }
 
 @media (max-width: 1200px) {
   .who-are-we-text {
     font-size: 140px !important;
   }
-}
-
-.who2-content {
-  line-height: 1;
-  text-shadow: .5px .5px grey;
 }
 
 .img2 {
