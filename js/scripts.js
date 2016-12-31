@@ -21,4 +21,6 @@ $(document).ready(function() {
   },
   { offset: '80%' });
 
+  /* $('.parallax-window').parallax({imageSrc: 'img1.jpg'}); */
+
 });

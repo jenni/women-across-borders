@@ -83,11 +83,6 @@ h3 {
   clear: both;
 }
 
-#actualVideo {
-  width: 180%;
-  margin-left: -40%;
-  position: absolute;
-}
 
 #videoLayerOne {
   width: 100vw;
@@ -96,6 +91,12 @@ h3 {
   z-index: 1;
   overflow: hidden;
   top: 0;
+}
+
+#actualVideo {
+  width: 180%;
+  margin-left: -40%;
+  position: fixed;
 }
 
 #videoLayerTwo {
@@ -156,9 +157,11 @@ h3 {
 #who p {margin-top: 30vh;}
 
 #who h2 {
-  font-size: 180px;
+  margin-top: 7vh;
+  font-size: 210px;
   font-weight: 900;
-  margin-top: -3vh;
+  letter-spacing: -2vh;
+  line-height: 25vh;
 }
 
 #who2 {height: 100vh;
@@ -171,6 +174,18 @@ margin-top: 20vh;}
   font-weight: 500;
   font-size: 15px;
   text-align: center; }
+
+
+.img2 {
+  margin-left: 10vh;
+  background: url('../img2.jpg');
+  width: 90%;
+  height: 50vh;
+}
+
+.parallax-window {
+    background: transparent;
+}
 
   /* a:visited {
   color: white;
