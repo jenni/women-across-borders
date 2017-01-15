@@ -17,6 +17,14 @@ body {
 }
 /* #566471 */
 
+.text {
+  font-size: 1.6vh;
+  line-height: 32px;
+  letter-spacing: 8px;
+  color: black;
+  position: relative;
+}
+
 h1 {
   font-family: 'Arial';
   font-size: 15vh;
@@ -50,17 +58,49 @@ h3 {
 }
 
 .navbar a {
-  -webkit-transition: color 600ms;
+  -webkit-transition: color 200ms;
+  position: relative;
 }
 
 .navbar ul li a {
   text-decoration: none;
+  position: relative;
 }
+
+
+.navbar-default .navbar-nav > li > a:before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 3px;
+  bottom: 0;
+  left: 13%;
+  background-color: #19f6e8;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-default .navbar-nav > li > a:hover:before {
+  visibility: visible;
+ -webkit-transform: scaleX(1);
+ transform: scaleX(1);
+}
+
+.svg-wrapper:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
+
 
 .navbar-default {
   font-family: 'Arial';
+  font-weight: bold;
   background-color: white;
-  border-color: none;
+  border-color: transparent;
 }
 
 .navbar.center .navbar-inner {
@@ -74,41 +114,36 @@ h3 {
 
 
 /* LANDING STUFF*/
-#landing {
-  width: 100vw;
-  height: 100vh;
-  background: black;
+
+.land-wrap {
   position: relative;
-  float: left;
-  clear: both;
-}
-
-#videoLayerOne {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  z-index: 1;
-  overflow: hidden;
-  top: 0;
-}
-
-#actualVideo {
-  width: 180%;
-  margin-left: -40%;
-  position: fixed;
-}
-
-#videoLayerTwo {
-  width: 100vw;
-  height: calc(100vh - 3vw);
-  position: absolute;
+  height: 100%;
+  color: #ffffff;
   z-index: 2;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center;
+}
+
+.img-layer-wrap {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.img-layer {
+  vertical-align: middle;
+  background: url("../woman27.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  background-color: transparent;
+  background-size: 100%;
+}
+
+@media (max-width: 399px) {
+  .img-layer {
+    height: 10vh;
+  }
+
 }
 
 .projectWrapper {
@@ -144,7 +179,7 @@ h3 {
   font-weight: 900;
 }
 
-#what h3 {background-color: #FED833;}
+#what h3 {background-color: orange;}
 
 .withPad {margin-right: 10vh}
 .icons {margin-top: 10vh;}
@@ -169,6 +204,7 @@ h3 {
   }
 }
 
+
 #who2 {
   height: 100vh;
   margin-left: 20vh;
@@ -190,52 +226,52 @@ h3 {
   font-size: 15px;
   text-align: center; }
 
-.who-are-we-image {
-  margin-top: 25%;
-  width: 100%;
-}
-
-.who2-content {
-  line-height: 1;
-  text-shadow: .5px .5px grey;
-}
-
-@media (min-width: 600px) {
-  .who-are-we-image-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    height: 100%;
-    margin-top: 10%;
+  .who-are-we-image {
+    margin-top: 25%;
+    width: 100%;
   }
-}
 
-@media (max-width: 1200px) {
-  .who-are-we-text {
-    font-size: 140px !important;
+  .who2-content {
+    line-height: 1;
+    text-shadow: .5px .5px grey;
   }
-}
 
-.img2 {
-  margin-left: 10vh;
-  background: url('../img2.jpg');
-  width: 90%;
-  height: 50vh;
-}
+  @media (min-width: 600px) {
+    .who-are-we-image-container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      height: 100%;
+      margin-top: 10%;
+    }
+  }
 
-.parallax-window {
+  @media (max-width: 1200px) {
+    .who-are-we-text {
+      font-size: 140px !important;
+    }
+  }
+
+  .img2 {
+    margin-left: 10vh;
+    background: url('../img2.jpg');
+    width: 90%;
+    height: 50vh;
+  }
+
+  .parallax-window {
+    background: transparent;
+  }
+
+  /* a:visited {
+  color: white;
+  text-decoration: none;
   background: transparent;
 }
 
 /* a:visited {
 color: white;
 text-decoration: none;
-    background: transparent;
-}
-
-  /* a:visited {
-  color: white;
-  text-decoration: none;
 }
 
 a:link {
