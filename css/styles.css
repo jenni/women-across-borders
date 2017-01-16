@@ -56,18 +56,20 @@ h3 {
   z-index: 1;
 }
 
-.navbar a {
-  -webkit-transition: color 200ms;
-  position: relative;
+.navbar-default {
+  font-family: 'Arial';
+  font-weight: bold;
+  background-color: white;
+  border-color: transparent;
+  text-align: center;
 }
 
-.navbar ul li a {
-  text-decoration: none;
-  position: relative;
+.navbar.center .navbar-inner .nav {
+  float: none;
+  display: inline-block;
 }
 
-
-.navbar-default .navbar-nav > li > a:before {
+.navbar .und a:before {
   content: "";
   position: absolute;
   width: 70%;
@@ -82,35 +84,24 @@ h3 {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.navbar-default .navbar-nav > li > a:hover:before {
+.navbar .und a:hover:before {
   visibility: visible;
  -webkit-transform: scaleX(1);
  transform: scaleX(1);
 }
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    -webkit-transition: color 200ms;
+    color: #FF8300;
+}
+
 
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus {
   background-color: white;
 }
-
-.navbar-default {
-  font-family: 'Arial';
-  font-weight: bold;
-  background-color: white;
-  border-color: transparent;
-}
-
-.navbar.center .navbar-inner {
-  text-align: center;
-}
-
-.navbar.center .navbar-inner .nav {
-  float: none;
-  display:inline-block;
-}
-
-
 
 /* LANDING STUFF*/
 
@@ -138,9 +129,9 @@ h3 {
   background-size: 100%;
 }
 
-@media (max-width: 399px) {
+@media (max-width: 400px) {
   .img-layer {
-    height: 10vh;
+    height: 50vh;
   }
 
 }
@@ -150,11 +141,11 @@ h3 {
   position: relative;
   clear: both;
   display: -webkit-flex;
-  flex-direction: row;
+  flex-direction: column;
   -webkit-justify-content: center;
   justify-content: center;
   -webkit-align-items: center;
-  align-items: center;
+  text-align: center;
   color: black;
 }
 
@@ -186,7 +177,9 @@ h3 {
 
 
 /* WHO SECTION */
+
 #who {height: 100vh;}
+
 #who p {margin-top: 30vh;}
 
 #who h2 {
@@ -203,23 +196,20 @@ h3 {
   }
 }
 
-
-#who2 {
-  height: 100vh;
+.who2 {
   margin-left: 20vh;
   margin-right: 20vh;
-  margin-top: 20vh;
 }
 
 @media (max-width: 1000px) {
-  #who2 {
+  .who2 {
     margin-top: 75vh;
     margin-left: 5vh;
     margin-right: 5vh;
   }
 }
 
-#who2 p {
+.who2 p {
   color: black;
   font-weight: 500;
   font-size: 15px;
@@ -247,33 +237,52 @@ h3 {
 
   @media (max-width: 1200px) {
     .who-are-we-text {
-      font-size: 140px !important;
+      font-size: 24x0px !important;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .who-are-we-text {
+      font-size: 25vh !important;
+      padding-top: 30vh;
+      margin-left: -5vh;
     }
   }
 
   .img2 {
-    margin-left: 10vh;
-    background: url('../img2.jpg');
-    width: 90%;
-    height: 50vh;
+    width: 100%;
   }
 
   .parallax-window {
     background: transparent;
   }
 
-  /* a:visited {
-  color: white;
-  text-decoration: none;
-  background: transparent;
-}
+  /* CONTACT US */
+/*
+  height: 100vh;
+  position: relative;
+  clear: both;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  text-align: center;
+  color: black;
+*/
+  #contact {
+    clear: both;
+    text-align: center;
+  }
 
-/* a:visited {
-color: white;
-text-decoration: none;
-}
+  #contact h3 {
+    margin-bottom: 15vh;
+  }
 
-a:link {
-color: white;
-text-decoration: none;
-} */
+  .form-control {width: 100%;}
+
+  textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
+      border-color: #FF8300 !important;
+      box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6) !important;
+      outline: 0 none;
+  }
