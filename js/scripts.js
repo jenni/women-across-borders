@@ -22,5 +22,8 @@ $(document).ready(function() {
   { offset: '80%' });
 
   /* $('.parallax-window').parallax({imageSrc: 'img1.jpg'}); */
-
+  $(".nav a").on("click", function(){
+   $(".nav").find(".active").removeClass("active");
+   $(this).parent().addClass("active");
+});
 });

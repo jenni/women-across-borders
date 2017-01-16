@@ -22,7 +22,6 @@ body {
   line-height: 32px;
   letter-spacing: 8px;
   color: black;
-  position: relative;
 }
 
 h1 {
@@ -75,7 +74,7 @@ h3 {
   height: 3px;
   bottom: 0;
   left: 13%;
-  background-color: #19f6e8;
+  background-color: #FF8300;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -89,12 +88,11 @@ h3 {
  transform: scaleX(1);
 }
 
-.svg-wrapper:hover .shape {
-  stroke-width: 2px;
-  stroke-dashoffset: 0;
-  stroke-dasharray: 760;
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  background-color: white;
 }
-
 
 .navbar-default {
   font-family: 'Arial';
@@ -111,6 +109,7 @@ h3 {
   float: none;
   display:inline-block;
 }
+
 
 
 /* LANDING STUFF*/
@@ -179,7 +178,7 @@ h3 {
   font-weight: 900;
 }
 
-#what h3 {background-color: orange;}
+#what h3 {background-color: #FF8300;}
 
 .withPad {margin-right: 10vh}
 .icons {margin-top: 10vh;}
