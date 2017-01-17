@@ -23,7 +23,9 @@ $(document).ready(function() {
 
   /* $('.parallax-window').parallax({imageSrc: 'img1.jpg'}); */
   $(".nav a").on("click", function(){
-   $(".nav").find(".active").removeClass("active");
-   $(this).parent().addClass("active");
-});
+    $(".nav").find(".active").removeClass("active");
+    $(this).parent().addClass("active");
+  });
+
+
 });

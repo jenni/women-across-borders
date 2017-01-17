@@ -1,288 +1,291 @@
-* { box-sizing: border-box; }
-
 * {
-  border-radius: 0 !important;
+    box-sizing: border-box;
 }
-
+* {
+    border-radius: 0 !important;
+}
 body {
-  font-size: 12px;
-  font-family: "Arial", 'Open Sans', sans-serif;
-  line-height: 18px;
-  letter-spacing: 0;
-  text-align: justify;
-  background: white;
-  position: relative;
-  overflow-x: hidden;
-  color: black;
+    font-size: 12px;
+    font-family: 'Montserrat', 'Open Sans', "Arial", sans-serif;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: justify;
+    background: white;
+    position: relative;
+    overflow-x: hidden;
+    color: black;
 }
 /* #566471 */
 
 .text {
-  font-size: 1.6vh;
-  line-height: 32px;
-  letter-spacing: 8px;
-  color: black;
+    font-size: 1.6vh;
+    line-height: 32px;
+    letter-spacing: 8px;
+    color: black;
 }
-
 h1 {
-  font-family: 'Arial';
-  font-size: 15vh;
-  color: #F5F5F5;
-  font-weight: bold;
-  letter-spacing: -1vh;
+    font-family: 'Arial';
+    font-size: 15vh;
+    color: #F5F5F5;
+    font-weight: bold;
+    letter-spacing: -1vh;
 }
-
 h2 {
-  font-size: 5vh;
-  font-weight: lighter;
-  color: black;
-  padding: 7vh;
-  text-transform: uppercase;
+    font-size: 5vh;
+    font-weight: lighter;
+    color: black;
+    padding: 7vh;
+    text-transform: uppercase;
 }
-
 h3 {
-  font-size: 2.5vh;
-  font-weight: bold;
-  padding-bottom: -2vh;
-  margin-bottom: 0vh;
-  /*  background: url('../tbc.jpg') repeat-x scroll left bottom; */
+    font-size: 2.5vh;
+    font-weight: bold;
+    padding-bottom: -2vh;
+    margin-bottom: 0vh;
+    /*  background: url('../tbc.jpg') repeat-x scroll left bottom; */
 }
-
 /* NAVBAR */
 
 .navbar {
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
-
 .navbar-default {
-  font-family: 'Arial';
-  font-weight: bold;
-  background-color: white;
-  border-color: transparent;
-  text-align: center;
+    font-family: 'Arial';
+    font-weight: bold;
+    background-color: white;
+    border-color: transparent;
+    text-align: center;
 }
-
 .navbar.center .navbar-inner .nav {
-  float: none;
-  display: inline-block;
+    float: none;
+    display: inline-block;
 }
-
 .navbar .und a:before {
-  content: "";
-  position: absolute;
-  width: 70%;
-  height: 3px;
-  bottom: 0;
-  left: 13%;
-  background-color: #FF8300;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 3px;
+    bottom: 0;
+    left: 13%;
+    background-color: #FF8300;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
-
 .navbar .und a:hover:before {
-  visibility: visible;
- -webkit-transform: scaleX(1);
- transform: scaleX(1);
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
-
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
     -webkit-transition: color 200ms;
     color: #FF8300;
 }
-
-
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus {
-  background-color: white;
+    background-color: white;
+}
+.brand-logo {
+    height: 5vh;
+    margin-top: 2vh;
 }
 
 /* LANDING STUFF*/
 
 .land-wrap {
-  position: relative;
-  height: 100%;
-  color: #ffffff;
-  z-index: 2;
+    position: relative;
+    height: 100%;
+    color: #ffffff;
+    z-index: 2;
 }
-
 .img-layer-wrap {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
 }
-
 .img-layer {
-  vertical-align: middle;
-  background: url("../woman27.jpg");
-  height: 100vh;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  background-size: cover;
-  background-color: transparent;
-  background-size: 100%;
+    vertical-align: middle;
+    background: url("../woman27.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    background-color: transparent;
+    background-size: 100%;
 }
-
 @media (max-width: 400px) {
-  .img-layer {
-    height: 50vh;
-  }
-
+    .img-layer {
+        height: 50vh;
+    }
 }
-
+.projectWrapperLg {
+    height: 100vh;
+    position: relative;
+    clear: both;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    text-align: center;
+}
 .projectWrapper {
-  height: 100vh;
-  position: relative;
-  clear: both;
-  display: -webkit-flex;
-  flex-direction: column;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  text-align: center;
-  color: black;
+    height: 80vh;
+    position: relative;
+    clear: both;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    text-align: center;
+    color: black;
 }
-
 /* TO ANIMATE */
-.hidme {opacity: 0;}
-.visible {opacity: 1;}
 
-
+.hidme {
+    opacity: 0;
+}
+.visible {
+    opacity: 1;
+}
 /* WHAT SECTION */
+
 #what {
-  font-size: 1.8vh;
-  height: 100vh;
-  text-align: left;
+    margin-left: -20vh;
+    margin-right: -20vh;
+    font-size: 1.8vh;
+    height: 100vh;
+    text-align: left;
+    background-color: white;
 }
-
 #what h2 {
-  margin-top: 20vh;
-  text-transform: lowercase;
-  font-size: 2vh;
-  margin-left: -7vh;
-  font-weight: 900;
+    color: black;
+    font-weight: bold;
+}
+#what h3 {
+    /*background-color: #FF8300; */
+    color: orange;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+.withPad {
+    margin-right: 10vh
+}
+.icons {
+    margin-top: 10vh;
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
+.icon {
+    width: 12vh;
 }
 
-#what h3 {background-color: #FF8300;}
+/***** WHO SECTION *****/
 
-.withPad {margin-right: 10vh}
-.icons {margin-top: 10vh;}
-.icon {width: 100px;}
-
-
-/* WHO SECTION */
-
-#who {height: 100vh;}
-
-#who p {margin-top: 30vh;}
-
-#who h2 {
-  margin-top: 7vh;
-  font-size: 210px;
-  font-weight: 900;
-  letter-spacing: -2vh;
-  line-height: 25vh;
+#who {
+    height: 100vh;
 }
-
+#who p {
+    margin-top: 10vh;
+    margin-right: 10vh;
+}
+.title {
+    margin-top: 50vh;
+    font-weight: bold;
+    font-size: 10vh;
+    line-height: 8vh;
+    letter-spacing: -1vh;
+    text-transform: uppercase;
+}
 @media (max-width: 1000px) {
-  #who h2 {
-    margin-top: 45vh;
-  }
+    #who h2 {
+        margin-top: 45vh;
+    }
 }
-
 .who2 {
-  margin-left: 20vh;
-  margin-right: 20vh;
+    margin-left: 20vh;
+    margin-right: 20vh;
 }
-
+.imgsize {
+    width: 120%;
+    padding-left: -20vh;
+    padding-right: -20vh;
+}
 @media (max-width: 1000px) {
-  .who2 {
-    margin-top: 75vh;
-    margin-left: 5vh;
-    margin-right: 5vh;
-  }
+    .who2 {
+        margin-top: 75vh;
+        margin-left: 5vh;
+        margin-right: 5vh;
+    }
 }
-
 .who2 p {
-  color: black;
-  font-weight: 500;
-  font-size: 15px;
-  text-align: center; }
-
-  .who-are-we-image {
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+}
+.who-are-we-image {
     margin-top: 25%;
     width: 100%;
-  }
-
-  .who2-content {
+}
+.who2-content {
     line-height: 1;
     text-shadow: .5px .5px grey;
-  }
-
-  @media (min-width: 600px) {
+}
+@media (min-width: 600px) {
     .who-are-we-image-container {
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      height: 100%;
-      margin-top: 10%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100%;
+        margin-top: 10%;
     }
-  }
-
-  @media (max-width: 1200px) {
+}
+@media (max-width: 1200px) {
     .who-are-we-text {
-      font-size: 24x0px !important;
+        font-size: 240px !important;
     }
-  }
-
-  @media (max-width: 600px) {
+}
+@media (max-width: 600px) {
     .who-are-we-text {
-      font-size: 25vh !important;
-      padding-top: 30vh;
-      margin-left: -5vh;
+        font-size: 25vh !important;
+        padding-top: 30vh;
+        margin-left: -5vh;
     }
-  }
-
-  .img2 {
+}
+.img2 {
     width: 100%;
-  }
-
-  .parallax-window {
+}
+.parallax-window {
     background: transparent;
-  }
+}
 
-  /* CONTACT US */
-/*
-  height: 100vh;
-  position: relative;
-  clear: both;
-  display: -webkit-flex;
-  flex-direction: row;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  text-align: center;
-  color: black;
-*/
-  #contact {
+/****** CONTACT AREA *****/
+
+#contact {
     clear: both;
     text-align: center;
-  }
-
-  #contact h3 {
+}
+#contact h3 {
     margin-bottom: 15vh;
-  }
+}
+.form-control {
+    width: 100%;
+}
 
-  .form-control {width: 100%;}
-
-  textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
-      border-color: #FF8300 !important;
-      box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6) !important;
-      outline: 0 none;
-  }
+textarea:focus,
+input:focus,
+input[type]:focus,
+.uneditable-input:focus {
+    border-color: #FF8300 !important;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6) !important;
+    outline: 0 none;
+}
